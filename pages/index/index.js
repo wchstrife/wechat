@@ -12,8 +12,8 @@ Page({
     winWidth: 0,
     winHeight: 0,
     tab_change: 0,
-    lendTime: [],    //借款时间
-    lendTimeGJJ: [], //借款时间
+    lendTime: [0,1,2,3,4,5],    //借款时间
+    lendTimeGJJ: [0,1,2,3,4,5,6], //借款时间
     lendTnterest: 0, //借款利率
     lendMoney: 0,    //借款金额
     count_debx: 0,   //等额本息月还款金额

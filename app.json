@@ -1,11 +1,12 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/result/result",
     "pages/car/car",
     "pages/p2p/p2p",
     "pages/bank/bank",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/report/report"
   ],
   "tabBar": {
     "color": "#8a8a8a",
@@ -35,13 +36,21 @@
         "iconPath": "images/4.png",
         "pagePath": "pages/bank/bank",
         "text": "存款"
+      },
+      {
+        "selectedIconPath": "images/44.png",
+        "iconPath": "images/4.png",
+        "pagePath": "pages/report/report",
+        "text": "申请"
       }
+
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }
