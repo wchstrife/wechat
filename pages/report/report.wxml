@@ -6,34 +6,34 @@
 
   <view class="ip_list">
     <label class="lb_left">姓名</label>
-    <input type="text" value="" bindinput="lilvKeyInput" placeholder=""/>
+    <input type="text" value="" bindinput="nameKeyInput" placeholder=""/>
     <label class="lb_right"></label>
   </view>
     <view class="ip_list">
     <label class="lb_left">身份证号</label>
-    <input type="text" value="" bindinput="Test1Input" placeholder=""/>
+    <input type="text" value="" bindinput="idCardInput" placeholder=""/>
     <label class="lb_right"></label>
   </view>
     <view class="ip_list">
     <label class="lb_left">手机号</label>
-    <input type="text" value="" bindinput="Test2Input" placeholder=""/>
+    <input type="text" value="" bindinput="phoneInput" placeholder=""/>
     <label class="lb_right"></label>
   </view>
   <view class="ip_list">
     <label class="lb_left">年收入</label>
-    <input type="text" value="" bindinput="bindKeyInput" placeholder="0"/>
+    <input type="text" value="" bindinput="incomeKeyInput" placeholder="0"/>
     <label class="lb_right">元</label>
   </view>
   <view class="ip_list">
     <label class="lb_left">贷款时间</label>    
-    <input type="text" value="" bindinput="timeKeyInput" placeholder="0"/>
+    <input type="text" value="" bindinput="loanTimeInput" placeholder="0"/>
     <label class="lb_right">年</label>    
   </view>
   <view class="result-btn">
-    <button bindtap="p2pResult">提交贷款申请</button>
+    <button bindtap="loanSubmit">提交贷款申请</button>
   </view>
   <view class="cunRrsulf">
-    <text style="text-align:right;">可用贷款金额：</text>
-    <text>{{p2pSum}} 元</text>
+    <text style="text-align:right;">可申请贷款金额：</text>
+    <text>{{loanValue}} 元</text>
   </view>
 </view>
