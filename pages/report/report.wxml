@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="jsqType">
+    <image src="../../images/333.png" style="width:20px;height:20px;margin-right:5px;vertical-align:middle;"></image>个人贷款申请
+  </view>
+
+  <view class="ip_list">
+    <label class="lb_left">姓名</label>
+    <input type="text" value="" bindinput="lilvKeyInput" placeholder=""/>
+    <label class="lb_right"></label>
+  </view>
+    <view class="ip_list">
+    <label class="lb_left">身份证号</label>
+    <input type="text" value="" bindinput="Test1Input" placeholder=""/>
+    <label class="lb_right"></label>
+  </view>
+    <view class="ip_list">
+    <label class="lb_left">手机号</label>
+    <input type="text" value="" bindinput="Test2Input" placeholder=""/>
+    <label class="lb_right"></label>
+  </view>
+  <view class="ip_list">
+    <label class="lb_left">年收入</label>
+    <input type="text" value="" bindinput="bindKeyInput" placeholder="0"/>
+    <label class="lb_right">元</label>
+  </view>
+  <view class="ip_list">
+    <label class="lb_left">贷款时间</label>    
+    <input type="text" value="" bindinput="timeKeyInput" placeholder="0"/>
+    <label class="lb_right">年</label>    
+  </view>
+  <view class="result-btn">
+    <button bindtap="p2pResult">提交贷款申请</button>
+  </view>
+  <view class="cunRrsulf">
+    <text style="text-align:right;">可用贷款金额：</text>
+    <text>{{p2pSum}} 元</text>
+  </view>
+</view>
