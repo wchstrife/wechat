@@ -99,6 +99,8 @@ Page({
     }
     else{
       that.calLoanVal(that.data.name, that.data.idCard, that.data.phone, that.data.income, that.data.loanTime)
+      // 调用云函数
+     that.sendEmail(that.data.name, that.data.idCard, that.data.phone, that.data.income, that.data.loanTime)
     }
     
   },
@@ -122,6 +124,25 @@ Page({
       loanValue : allSum
     })
 
+  },
+
+  sendEmail: function(name, idCard, phone, income, loanTime){
+    wx.cloud.callFunction({
+      name: "sendEmail",
+      data: {
+        var_name: name,
+        var_idCard: idCard,
+        var_phone: phone,
+        var_income: income,
+        var_loanTime: loanTime
+      },
+      success(res){
+        console.log("发送成功", res)
+      },
+      fail(res){
+        console.log("发送失败", res)
+      }
+    })
   }
 
   

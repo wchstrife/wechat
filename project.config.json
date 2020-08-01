@@ -27,13 +27,15 @@
 		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
+	"cloudfunctionRoot": "cloud/",
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "wxd4485855e5b956a5",
+	"appid": "wx44b3b809f12f052c",
 	"projectname": "Loan",
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
