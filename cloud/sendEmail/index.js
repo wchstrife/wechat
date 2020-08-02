@@ -22,7 +22,7 @@ exports.main = async(event, context) => {
   // 获取数据
   let { userInfo, var_name, var_idCard, var_phone, var_income, var_loanTime} = event
 
-  var_content = var_name + '先生/女士提交了贷款申请。\n' + '身份证号码: ' + var_idCard +'\n'+ '手机号码: ' + var_phone +'\n' + '年收入: ' + var_income +'\n' + '贷款时间 ' + var_loanTime +'\n'
+  var_content = var_name + '  先生/女士提交了贷款申请。\n' + '身份证号码: ' + var_idCard +'\n'+ '手机号码: ' + var_phone +'\n' + '年收入: ' + var_income +'\n' + '贷款时间 ' + var_loanTime +'\n'
 
   // 创建一个邮件对象
   var mail = {
